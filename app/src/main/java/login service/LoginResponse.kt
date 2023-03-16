@@ -12,9 +12,8 @@ data class LoginResponse(
 
 data class LoginRequest(val email: String, val password: String)
 
-data class FoodCategory(val name: String, val items: List<String>)
-
-
+data class FoodCategory(val name: String, val raw: List<FoodItem>)
+data class FoodItem(val name: String, val description: String, val category: String, val code: String)
 
 
 

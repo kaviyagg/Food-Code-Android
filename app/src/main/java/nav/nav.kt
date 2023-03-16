@@ -10,7 +10,7 @@ fun MyAppNavigation() {
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Landing.route
+        startDestination = Screen.MainScreen.route
     ) {
         composable(Screen.Landing.route) {
             LandingPage(navController = navController)
